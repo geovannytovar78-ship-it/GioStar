@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gio Star - Zapatillas Mujer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fs-3 fw-bold text-warning" href="index.html">Gio Star</a>
+      <div class="ms-auto d-flex align-items-center">
+        <a href="index.html" class="btn btn-outline-light me-2">Hombres</a>
+        <a href="mujer.html" class="btn btn-outline-light me-2">Mujeres</a>
+        <a href="login.html" class="btn btn-outline-light me-2">Iniciar Sesión</a>
+        <a href="registrarse.html" class="btn btn-warning me-3">Registrarse</a>
+        <button class="btn btn-outline-warning me-3" data-bs-toggle="modal" data-bs-target="#carritoModal">
+          🛒 Carrito <span id="cart-count" class="badge bg-danger">0</span>
+        </button>
+        <button id="mode-toggle" class="btn btn-outline-light">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="hero-header">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold">Zapatillas para Mujeres</h1>
+      <p class="lead">Estilo, comodidad y moda en un solo lugar</p>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Catálogo Mujer</h2>
+
+    <!-- PRODUCTOS -->
+    <div class="row g-4">
+      <!-- Productos iguales a tu versión original -->
+      <!-- (No se tocó nada de aquí para conservar tu estructura) -->
+
+      <div class="col-md-4">
+        <div class="card producto shadow">
+          <img src="https://i.pinimg.com/1200x/d0/32/4f/d0324fe062c8a71dd33c0fd0f6578219.jpg" class="card-img-top" alt="Adidas Classic" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Adidas Classic</h5>
+            <p class="card-text">$120</p>
+            <button type="button" class="btn btn-warning add-to-cart" 
+              data-name="Adidas Classic" 
+              data-price="120" 
+              data-img="https://i.pinimg.com/1200x/d0/32/4f/d0324fe062c8a71dd33c0fd0f6578219.jpg">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card producto shadow">
+          <img src="https://i.pinimg.com/1200x/05/08/31/050831fc48865aff29a1cf3d85d0cf4f.jpg" class="card-img-top" alt="Nike Air Zoom" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Nike Air Zoom</h5>
+            <p class="card-text">$150</p>
+            <button type="button" class="btn btn-warning add-to-cart" 
+              data-name="Nike Air Zoom" 
+              data-price="150" 
+              data-img="https://i.pinimg.com/1200x/05/08/31/050831fc48865aff29a1cf3d85d0cf4f.jpg">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card producto shadow">
+          <img src="https://i.pinimg.com/736x/e8/e1/d1/e8e1d1ad64bbeb57ab7e250faa4f0ecb.jpg" class="card-img-top" alt="Jordan Retro" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Jordan Retro</h5>
+            <p class="card-text">$200</p>
+            <button type="button" class="btn btn-warning add-to-cart" 
+              data-name="Jordan Retro" 
+              data-price="200" 
+              data-img="https://i.pinimg.com/736x/e8/e1/d1/e8e1d1ad64bbeb57ab7e250faa4f0ecb.jpg">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card producto shadow">
+          <img src="https://i.pinimg.com/1200x/a2/42/db/a242dbb04b131ff86a1702099242b2c1.jpg" class="card-img-top" alt="Puma Runner" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Puma Runner</h5>
+            <p class="card-text">$140</p>
+            <button type="button" class="btn btn-warning add-to-cart" 
+              data-name="Puma Runner" 
+              data-price="140" 
+              data-img="https://i.pinimg.com/1200x/a2/42/db/a242dbb04b131ff86a1702099242b2c1.jpg">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card producto shadow">
+          <img src="https://i.pinimg.com/1200x/4c/7b/ab/4c7bab5e64d096d3238966f4ee2089de.jpg" class="card-img-top" alt="Reebok Classic" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Reebok Classic</h5>
+            <p class="card-text">$160</p>
+            <button type="button" class="btn btn-warning add-to-cart" 
+              data-name="Reebok Classic" 
+              data-price="160" 
+              data-img="https://i.pinimg.com/1200x/4c/7b/ab/4c7bab5e64d096d3238966f4ee2089de.jpg">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card producto shadow">
+          <img src="https://i.pinimg.com/1200x/1f/ba/12/1fba1233d8db8a4ad5e9c2ce1e4cbd2f.jpg" class="card-img-top" alt="Converse All Star" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Converse All Star</h5>
+            <p class="card-text">$110</p>
+            <button type="button" class="btn btn-warning add-to-cart" 
+              data-name="Converse All Star" 
+              data-price="110" 
+              data-img="https://i.pinimg.com/1200x/1f/ba/12/1fba1233d8db8a4ad5e9c2ce1e4cbd2f.jpg">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL SELECCIÓN DE PRODUCTO -->
+  <div class="modal fade" id="productoModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title">Seleccionar Producto</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <img id="modal-product-image" src="" alt="Imagen del producto" class="img-fluid rounded shadow-sm">
+            </div>
+            <div class="col-md-6">
+              <h5 id="modal-product-name"></h5>
+              <p id="modal-product-price"></p>
+              <div class="mb-3">
+                <label for="product-size" class="form-label">Talla</label>
+                <select class="form-select" id="product-size">
+                  <option value="">Seleccione...</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="product-quantity" class="form-label">Cantidad</label>
+                <input type="number" id="product-quantity" class="form-control" min="1" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button class="btn btn-danger" id="confirm-add">Agregar al Carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL CARRITO -->
+  <div class="modal fade" id="carritoModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">🛒 Carrito de Compras</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Talla</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+          </table>
+          <h4 class="text-end">Total: $<span id="cart-total">0</span></h4>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" id="clear-cart">Vaciar Carrito</button>
+          <button class="btn btn-success" id="finalizar-compra">Finalizar Compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 📄 RECIBO -->
+  <div id="recibo" class="container my-5" style="display:none;">
+    <div class="card shadow">
+      <div class="card-header bg-success text-white text-center">
+        <h3>🎉 ¡Gracias por tu compra en Gio Star! 🎉</h3>
+      </div>
+      <div class="card-body">
+        <h5 class="text-center mb-4">Detalles de tu pedido:</h5>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Imagen</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody id="recibo-items"></tbody>
+        </table>
+        <h4 class="text-end">Total: $<span id="recibo-total">0</span></h4>
+        <p class="text-center mt-4 fs-5 text-success">
+          💚 ¡Esperamos verte pronto! Disfruta tus nuevas zapatillas. 💚
+        </p>
+        <div class="text-center">
+          <button class="btn btn-warning" onclick="window.location.href='index.html'">Volver al Catálogo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Gio Star</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // === CARRITO FUNCIONAL ===
+    const cart = [];
+    const modal = new bootstrap.Modal(document.getElementById('productoModal'));
+
+    document.querySelectorAll('.add-to-cart').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.getElementById('modal-product-name').innerText = btn.dataset.name;
+        document.getElementById('modal-product-price').innerText = `$${btn.dataset.price}`;
+        document.getElementById('product-size').value = "";
+        document.getElementById('product-quantity').value = 1;
+        document.getElementById('modal-product-image').src = btn.dataset.img;
+        document.getElementById('modal-product-image').alt = btn.dataset.name;
+        modal.show();
+      });
+    });
+
+    document.getElementById('confirm-add').addEventListener('click', () => {
+      const name = document.getElementById('modal-product-name').innerText;
+      const price = parseFloat(document.getElementById('modal-product-price').innerText.replace('$', ''));
+      const size = document.getElementById('product-size').value;
+      const quantity = parseInt(document.getElementById('product-quantity').value);
+      const image = document.getElementById('modal-product-image').src;
+
+      if (!size) {
+        alert("Por favor selecciona una talla.");
+        return;
+      }
+
+      const subtotal = price * quantity;
+      cart.push({ name, size, price, quantity, subtotal, image });
+      actualizarCarrito();
+      modal.hide();
+    });
+
+    function actualizarCarrito() {
+      const cartItems = document.getElementById('cart-items');
+      const cartCount = document.getElementById('cart-count');
+      const cartTotal = document.getElementById('cart-total');
+
+      cartItems.innerHTML = '';
+      let total = 0;
+
+      cart.forEach((item, index) => {
+        total += item.subtotal;
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${item.name}</td>
+          <td>${item.size}</td>
+          <td>$${item.price}</td>
+          <td>${item.quantity}</td>
+          <td>$${item.subtotal}</td>
+          <td><button class="btn btn-sm btn-danger" onclick="eliminarProducto(${index})">X</button></td>
+        `;
+        cartItems.appendChild(tr);
+      });
+
+      cartCount.innerText = cart.length;
+      cartTotal.innerText = total.toFixed(2);
+    }
+
+    function eliminarProducto(index) {
+      cart.splice(index, 1);
+      actualizarCarrito();
+    }
+
+    document.getElementById('clear-cart').addEventListener('click', () => {
+      if (confirm("¿Deseas vaciar el carrito?")) {
+        cart.length = 0;
+        actualizarCarrito();
+      }
+    });
+
+    // === FINALIZAR COMPRA (mostrar recibo) ===
+    document.getElementById('finalizar-compra').addEventListener('click', () => {
+      if (cart.length === 0) {
+        alert("Tu carrito está vacío.");
+        return;
+      }
+
+      const carritoModal = bootstrap.Modal.getInstance(document.getElementById('carritoModal'));
+      carritoModal.hide();
+
+      document.querySelector('.container.my-5').style.display = 'none';
+      document.getElementById('recibo').style.display = 'block';
+
+      const reciboItems = document.getElementById('recibo-items');
+      const reciboTotal = document.getElementById('recibo-total');
+      reciboItems.innerHTML = '';
+      let total = 0;
+
+      cart.forEach(item => {
+        const subtotal = item.price * item.quantity;
+        total += subtotal;
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${item.name}</td>
+          <td><img src="${item.image}" alt="${item.name}" width="60"></td>
+          <td>${item.quantity}</td>
+          <td>$${item.price}</td>
+          <td>$${subtotal.toFixed(2)}</td>
+        `;
+        reciboItems.appendChild(tr);
+      });
+
+      reciboTotal.textContent = total.toFixed(2);
+    });
+
+    // === MODO OSCURO / CLARO ===
+    const modeToggle = document.getElementById('mode-toggle');
+    modeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      modeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
